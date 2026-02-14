@@ -19,18 +19,18 @@
     arjs="sourceType: webcam; debugUIEnabled: false;"
   >
 
-    <!-- Tvoj marker iz fajla -->
-    <a-marker type="pattern" url="./AR/pattern-hiro.patt">
+    <!-- Marker (hiro je već ugrađen, ne treba patt fajl) -->
+    <a-marker preset="hiro">
 
-      <!-- Prikaz slike -->
+      <!-- Slika kao tekstura -->
       <a-plane
-        id="imagePlane"
         position="0 0 0"
         rotation="-90 0 0"
         width="2"
         height="1.125"
-        material="shader: flat; src: ./AR/capture.jpg"
-      ></a-plane>
+        material="shader: flat; src: ./capture.jpg"
+      >
+      </a-plane>
 
     </a-marker>
 
